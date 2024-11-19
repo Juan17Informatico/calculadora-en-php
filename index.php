@@ -10,6 +10,23 @@ require('logic.php');
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Operaciones básicas</h1>
+    <main>
+        <div class="btn-operator" id="add">
+            btn
+        </div>
+
+        <div class="btn-operator" id="sub">
+
+        </div>
+
+        <div class="btn-operator" id="mult">
+
+        </div>
+
+        <div class="btn-operator" id="div">
+
+        </div>
+
+    </main>
 </body>
 </html>
