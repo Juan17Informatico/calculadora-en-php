@@ -1,0 +1,140 @@
+/* Variables de colores */
+:root {
+    --color-primary: #A5FFD6; /* Color principal */
+    --color-secondary: #817F75; /* Color secundario */
+    --color-tertiary: #B3B5BB; /* Color de soporte */
+    --color-background: #C5D9E2; /* Fondo principal */
+    --color-accent: #CDFFF9; /* Color de acento */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-secondary);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    background-color: var(--color-accent);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: var(--color-secondary);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-tertiary);
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 4px var(--color-primary);
+}
+
+/* Botones */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.operators {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+button.operators:hover {
+    background-color: var(--color-tertiary);
+    transform: translateY(-2px);
+}
+
+button[type="reset"] {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+button[type="reset"]:hover {
+    background-color: var(--color-tertiary);
+    transform: translateY(-2px);
+}
+
+/* Contenedores */
+.numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-operator-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+}
+
+.result-container {
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-tertiary);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: var(--color-secondary);
+}
+
+.result-container p {
+    margin: 0;
+}
+
+.btn-operator-container a {
+    text-decoration: none;
+}
+
+.btn-operator-container button {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-operator-container button:hover {
+    background-color: var(--color-tertiary);
+}
+
